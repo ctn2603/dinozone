@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="dinosaurframe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3840 1300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Golden_Ring);
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+    <radialGradient id="Golden_Ring" data-name="Golden Ring" cx="1920" cy="650.5" fx="1920" fy="650.5" r="1408.95" gradientUnits="userSpaceOnUse">
+      <stop offset=".74" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".76" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".77" stop-color="#fff" stop-opacity=".04"/>
+      <stop offset=".79" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset=".79" stop-color="#fff" stop-opacity=".18"/>
+      <stop offset=".8" stop-color="#fff" stop-opacity=".28"/>
+      <stop offset=".81" stop-color="#fff" stop-opacity=".4"/>
+      <stop offset=".82" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset=".82" stop-color="#dbc01f"/>
+      <stop offset=".83" stop-color="#f1dc3a"/>
+      <stop offset=".84" stop-color="#f5e13f"/>
+      <stop offset=".84" stop-color="#dbc01f"/>
+      <stop offset=".85" stop-color="#e1ca45"/>
+      <stop offset=".87" stop-color="#e9d876"/>
+      <stop offset=".89" stop-color="#efe4a0"/>
+      <stop offset=".91" stop-color="#f5eec2"/>
+      <stop offset=".93" stop-color="#f9f5dd"/>
+      <stop offset=".95" stop-color="#fcfaf0"/>
+      <stop offset=".98" stop-color="#fefdfb"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+  <polygon class="cls-1" points="28 139.99 141.5 25.5 3693.5 25.5 3812 139.99 3812 1159.68 3699.5 1275.5 143.5 1275.5 28 1159.68 28 139.99"/>
+</svg>

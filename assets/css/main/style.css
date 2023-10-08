@@ -1,0 +1,307 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.scroll-container {
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+
+#section-1,
+#section-2,
+#section-3,
+#section-4,
+#section-5,
+#section-6 {
+	min-height: 100vh;
+}
+
+/**********************************************************/
+/*                         Section 1                      */
+/**********************************************************/
+#section-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+/* Logo section */
+#header-frame {
+	height: 130px;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#logo-frame {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#logo {
+	display: block;
+	margin: auto;
+	height: 100%;
+	width: 100%;
+	max-width: 300px;
+	object-fit: contain;
+}
+
+/* Nav bar section */
+#nav-bar {
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: 15px;
+}
+
+.nav-bar-item {
+	display: inline;
+	margin: 0 20px;
+}
+
+.link {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Rubik", sans-serif;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.active-link,
+.link:hover {
+	opacity: 0.4;
+}
+
+/* Introduction section */
+#intro-message {
+	display: block;
+	text-align: center;
+	margin-top: 200px;
+	font: 1.5em "Rubik", sans-serif;
+	color: #cac393;
+}
+
+#dinosaur-slide-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+#dinosaur-slide-background {
+	margin: auto;
+	width: 70%;
+}
+
+.swiper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 45%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 1em;
+	background-size: cover;
+	background-position: center;
+	width: 300px;
+	height: 400px;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+/* Dinosaur section */
+.dinosaur {
+	margin-top: 5%;
+	animation-name: dinosaur-animation;
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	animation-direction: alternate;
+}
+
+.dinosaur-name {
+	margin-top: 2%;
+	color: #cac393;
+	font: 1.5em "Rubik", sans-serif;
+	text-transform: capitalize;
+	letter-spacing: 0.1em;
+}
+
+@keyframes dinosaur-animation {
+	from {
+		opacity: 0.95;
+		width: 47%;
+	}
+	to {
+		opacity: 1;
+		width: 48%;
+	}
+}
+/**********************************************************/
+/*                         Section 2                      */
+/**********************************************************/
+.dinosaur-title-container {
+	padding-top: 50px;
+}
+
+.dinosaur-title {
+	text-align: center;
+	margin: 40px auto 20px;
+	color: #cac393;
+	text-transform: capitalize;
+	font: 2.5em "Rubik", sans-serif;
+}
+
+.dinosaur-info-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+
+	width: 80%;
+	margin: auto;
+}
+
+.dinosaur-graphic-container {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: flex-start;
+}
+
+.dinosaur-detail-container {
+	position: relative;
+	flex-grow: 10;
+	width: 300px;
+}
+
+.spec-button-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button-container {
+	position: relative;
+	top: 9%;
+	right: 0%;
+	display: flex;
+	margin: 0 20px;
+	justify-content: flex-end;
+}
+
+.voice-button {
+	margin: 0 10px;
+}
+
+.dinosaur-image-container {
+	display: flex;
+	padding: 20px;
+}
+
+.dinosaur-video-container {
+	display: flex;
+	padding: 20px;
+}
+
+.dinosaur-image,
+.dinosaur-video {
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 450px;
+	border-radius: 10px;
+	max-height: 315px;
+}
+
+.dinosaur-video {
+	height: 600px;
+}
+
+.dinosaur-detail {
+	color: white;
+	margin-top: 15px;
+}
+
+.dinosaur-characteristic-label {
+	margin: 5px 5px 5px 0;
+	display: inline-block;
+	font: 1.4em "Rubik", sans-serif;
+	font-weight: bold;
+	color: #cac393;
+}
+
+.dinosaur-characteristic-info {
+	font: 1.4em "Rubik", sans-serif;
+}
+
+.dinosaur-note {
+	margin: 8px 20px 8px 0;
+	display: inline-block;
+	font: 1.3em "Rubik", sans-serif;
+	line-height: 1.5em;
+}
+
+.voice-button {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	margin-top: 25px;
+
+	font: 1.2em "Rubik", sans-serif;
+	padding: 0.5em 1.1em 0.5em 1.1em;
+	color: white;
+	background: linear-gradient(
+		0deg,
+		rgba(20, 167, 62, 1) 0%,
+		rgba(102, 247, 113, 1) 100%
+	);
+	border: none;
+	box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+	letter-spacing: 0.05em;
+	border-radius: 20em;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.voice-button:active {
+	background-color: #f3f4f6;
+	box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+		0px 1px 1px rgba(81, 41, 10, 0.15);
+	transform: translateY(0.125rem);
+}
+
+.voice-button:hover {
+	box-shadow: rgba(72, 35, 7, 0.46) 0 0 0 4px,
+		-6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+
+.stop-button {
+	display: none;
+}
